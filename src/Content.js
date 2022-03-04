@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
 import Title from './Title';
@@ -8,7 +8,6 @@ import TodoList from './TodoList';
 import CompletedList from './CompletedList';
 
 export default () => {
-    const dispatch = useDispatch();
     const todos = useSelector(state => state.todo.todos);
     const completed = useSelector(state => state.todo.completed);
 
